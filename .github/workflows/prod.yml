@@ -33,12 +33,12 @@ jobs:
     # Build and push the backend Docker image
     - name: Build and push backend Docker image
       run: |
-        docker build -t yourdockerhubusername/backend:latest -f ./backend/Dockerfile .
-        docker push yourdockerhubusername/backend:latest
+        docker build -t chihebben008/backend:latest -f ./backend/Dockerfile ./backend
+        docker push chihebben008/backend:latest
 
     # Build and push the frontend Docker image
     - name: Build and push frontend Docker image
       run: |
-        docker build -t yourdockerhubusername/frontend:latest -f ./frontend/Dockerfile .
-        docker push yourdockerhubusername/frontend:latest
+        docker build -t chihebben008/frontend:latest -f ./frontend/Dockerfile ./frontend
+        docker push chihebben008/frontend:latest
 
